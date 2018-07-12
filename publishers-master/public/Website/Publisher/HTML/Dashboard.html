@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_globalsign-domain-verification" content="qbw9lV17xS49YNux6uCCiE45peUkwMOWEjK5xjrONE" />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="qQHeUgOFt6C7exVhr5xj18PKdemn9bu0eeyKURRH">
+
+    <title>TrafficRoots - Home</title>
+
+    <!-- Scripts -->
+    <script>
+    window.Laravel = {
+        'csrfToken': "qQHeUgOFt6C7exVhr5xj18PKdemn9bu0eeyKURRH",
+    }
+    </script>
+    <!-- Global and page level js -->
+    <!-- Data Tables -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.3.1/b-colvis-1.3.1/b-html5-1.3.1/b-print-1.3.1/cr-1.3.3/fc-3.2.2/fh-3.1.2/kt-2.2.1/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.css"/>
+<!-- global styles -->
+<!-- add bootstrap code and redirect the link -->
+<link rel="stylesheet" href="../../css/bootstrap.css" >
+<link rel="stylesheet" href="../../css/font-awesome.css" >
+<link rel="stylesheet" href="../../plugins/toastr/toastr.min.css" >
+<link rel="stylesheet" href="https://trafficroots.com/js/plugins/gritter/jquery.gritter.css" >
+<link rel="stylesheet" href="https://trafficroots.com/css/animate.css" >
+<!-- add css and redirect the link -->
+<link rel="stylesheet" href=" ../../css/style.css" >
+<link rel="stylesheet" href="https://trafficroots.com/mix/app.css?id=5aad3a4b2ca245489c5a" >
+<!-- summer editor -->
+
+
+<!-- date pickers -->
+
+<!-- jquery steps -->
+<link rel="stylesheet" href="https://trafficroots.com/css/plugins/steps/jquery.steps.css">
+
+
+<!-- tips styles -->
+<style>
+    .logo-style{
+    width: 70px; height: 70px; border-radius: 50%; background-color: #19aa8d; display:table-cell; vertical-align:middle; text-align:center;
+    }
+.panel-default > .panel-heading {
+  background: #1AB394;
+  color: white;
+}
+</style>
+<!-- end globals -->
+<!-- page level styles -->
+<!-- end page level styles -->
+ 
+    <script src="https://trafficroots.com/mix/app.js?id=c76612347a885fea75d7"></script>
+<!-- Mainly scripts -->
+
+<script src="https://trafficroots.com/js/bootstrap.min.js"></script>
+<script src="https://trafficroots.com/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="https://trafficroots.com/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Data Tables -->
+
+<!-- Flot -->
+<script src="https://trafficroots.com/js/plugins/flot/jquery.flot.js"></script>
+<script src="https://trafficroots.com/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+
+
+<!-- Peity -->
+
+
+<!-- Custom and plugin javascript -->
+<script src="https://trafficroots.com/js/inspinia.js"></script>
+<script src="https://trafficroots.com/js/plugins/iCheck/icheck.min.js"></script>
+
+
+<!-- jQuery UI -->
+
+
+<!-- GITTER -->
+
+
+<!-- Sparkline -->
+
+
+<!-- Sparkline demo data  -->
+
+
+<!-- ChartJS-->
+<script src="https://trafficroots.com/js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- jQuerySteps -->
+<script src="https://trafficroots.com/js/plugins/staps/jquery.steps.min.js"></script>
+
+<!-- Google reCaptcha -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Toastr -->
+<script src="https://trafficroots.com/js/plugins/toastr/toastr.min.js"></script>
+
+<script type="text/javascript">
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    // "progressBar": true,
+    "preventDuplicates": true,
+    "positionClass": "toast-top-right",
+    "onclick": null,
+    "showDuration": "400",
+    "hideDuration": "400",
+    "timeOut": "2000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "slideDown",
+    "hideMethod": "slideUp"
+};
+
+function setActiveNav(selector) {
+    $('.nav-click').removeClass("active");
+    $(selector).addClass("active");
+}
+</script>
+<!-- Input Mask -->
+
+<!-- SUMMERNOTE -->
+
+
+<!-- Input Mask-->
+
+
+<!-- Data picker -->
+
+
+<!-- Clock picker -->
+
+
+<!-- Date range use moment.js same as full calendar plugin -->
+
+
+<!-- Date range picker -->
+
+
+<!-- end globals -->
+<!-- page level scripts -->
+<script>
+    function showThisMonth(){
+        $(".lastmonth").hide();
+        $(".thismonth").show();
+        return false;
+    }
+    function showLastMonth(){
+        $(".thismonth").hide();
+        $(".lastmonth").show();
+        return false;
+    }
+    $(document).ready(function() {
+		var timeFormat = 'MM/DD/YYYY HH:mm';
+
+
+                var lineData = {
+        labels: [                    new Date('10/02/2017').toLocaleDateString(),
+                                     new Date('10/03/2017').toLocaleDateString(),
+                                     new Date('10/04/2017').toLocaleDateString(),
+                                     new Date('10/05/2017').toLocaleDateString(),
+                                     new Date('10/06/2017').toLocaleDateString(),
+                                     new Date('10/07/2017').toLocaleDateString(),
+                                     new Date('10/08/2017').toLocaleDateString(),
+                                     new Date('10/09/2017').toLocaleDateString(),
+                                     new Date('10/10/2017').toLocaleDateString(),
+                                     new Date('10/11/2017').toLocaleDateString(),
+                                     new Date('10/12/2017').toLocaleDateString(),
+                                     new Date('10/13/2017').toLocaleDateString(),
+                                     new Date('10/14/2017').toLocaleDateString(),
+                                     new Date('10/15/2017').toLocaleDateString(),
+                                     new Date('10/16/2017').toLocaleDateString(),
+                                     new Date('10/17/2017').toLocaleDateString(),
+                                     new Date('10/18/2017').toLocaleDateString(),
+                                     new Date('10/19/2017').toLocaleDateString(),
+                                     new Date('10/20/2017').toLocaleDateString(),
+                                     new Date('10/21/2017').toLocaleDateString(),
+                                     new Date('10/22/2017').toLocaleDateString(),
+                                     new Date('10/23/2017').toLocaleDateString(),
+                                     new Date('10/24/2017').toLocaleDateString(),
+                                     new Date('10/25/2017').toLocaleDateString(),
+                                     new Date('10/26/2017').toLocaleDateString(),
+                                     new Date('10/27/2017').toLocaleDateString(),
+                                     new Date('10/28/2017').toLocaleDateString(),
+                                     new Date('10/29/2017').toLocaleDateString(),
+                                     new Date('10/30/2017').toLocaleDateString(),
+                                     new Date('10/31/2017').toLocaleDateString(),
+                                     new Date('11/01/2017').toLocaleDateString(),
+                                 ],
+        datasets: [
+            {
+                label: "Impressions",
+                fillColor: "rgba(220,220,220,0.5)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [                    0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                 ]
+            },
+            {
+                label: "Clicks",
+                fillColor: "rgba(26,179,148,0.5)",
+                strokeColor: "rgba(26,179,148,0.7)",
+                pointColor: "rgba(26,179,148,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
+                data: [                    0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                 ]
+            },
+            {
+                label: "Spend",
+                fillColor: "rgba(66,134,234,0.5)",
+                strokeColor: "rgba(66,134,234,0.7)",
+                pointColor: "rgba(66,134,234,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(26,179,148,1)",
+                data: [                    0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                                     0,
+                 ]
+            }
+        ]
+    };
+
+    var lineOptions = {
+        scaleShowGridLines: true,
+        scaleGridLineColor: "rgba(0,0,0,.05)",
+        scaleGridLineWidth: 1,
+        bezierCurve: true,
+        bezierCurveTension: 0.4,
+        pointDot: true,
+        pointDotRadius: 4,
+        pointDotStrokeWidth: 1,
+        pointHitDetectionRadius: 20,
+        datasetStroke: true,
+        datasetStrokeWidth: 2,
+        datasetFill: true,
+        responsive: true,
+                                scales: {
+                                        xAxes: [{
+                                                type: "time",
+                                                time: {
+                                                        format: timeFormat,
+                                                        // round: 'day'
+                                                        tooltipFormat: 'MMM D'
+                                                },
+                                                scaleLabel: {
+                                                        display: true,
+                                                        labelString: 'Date'
+                                                }
+                                        }, ],
+                                        yAxes: [{
+                                                scaleLabel: {
+                                                        display: true,
+                                                        labelString: 'value'
+                                                }
+                                        }]
+                                },
+    };
+
+
+    var ctx = document.getElementById("lineChart").getContext("2d");
+    var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
+
+    });
+</script>
+<!-- end page level scripts -->
+</head>
+
+<body class="no-skin-config">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <!-- Branding Image -->
+                            <!-- Changed the Logo and need to be inserted into the new template -->
+                            <!-- changes have been made to the Logo of the site -->
+                            <div>
+                                <a href="https://trafficroots.com">
+                                    <div id="NewLogo"> <img src="../img/Logo.png" width="302px" height="189px"></div>
+                                </a>
+                            </div>
+                    </li>
+                    <!-- Authentication Links -->
+                                        <li id="nav_pub" class="nav-click">
+                        <a href="https://trafficroots.com/home">
+                            <i class="fa fa-desktop fa-2x"></i>
+                            <span class="nav-label">Publisher</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="https://trafficroots.com/home?type=1">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/sites">Sites</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/stats/pub">Stats</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="nav_buyer" class="nav-click">
+                        <a href="https://trafficroots.com/buyers">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <span class="nav-label">Advertiser</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="https://trafficroots.com/buyers">Admin</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/home?type=2">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/campaigns">Campaigns</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/faq_advertiser">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="nav_support" class="nav-click">
+                        <a href="https://trafficroots.com/tickets">
+                            <i class="fa fa-bug fa-2x"></i>
+                            <span class="nav-label">Support</span>
+                        </a>
+                    </li>
+                    
+                    <li id="nav_logout" class="nav-click">
+                        <a href="https://trafficroots.com/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                            <i class="fa fa-plug fa-2x"></i>
+                            <span class="nav-label">Logout</span>
+                        </a>
+                        <form id="logout-form" action="https://trafficroots.com/logout" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="qQHeUgOFt6C7exVhr5xj18PKdemn9bu0eeyKURRH">
+                        </form>
+                    </li>
+                                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                                                <li>
+                            <span class="m-r-sm text-muted welcome-message"><!-- insert username php code here --></span>
+                        </li>
+
+                        <li>
+                            <a href="https://trafficroots.com/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                <i class="fa fa-plug"></i>
+                                <span class="nav-label">Logout</span>
+                            </a>
+                            <form id="logout-form" action="https://trafficroots.com/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="qQHeUgOFt6C7exVhr5xj18PKdemn9bu0eeyKURRH">
+                            </form>
+                        </li>
+                        
+                                            </ul>
+
+                </nav>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                 
+<!-- Inserted the Header into the template -->                 
+<h1><mark id="PubHeader">Publisher Dashboard</mark></h1>
+<div class="row">
+    <div class="col-lg-3-1">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+            	<!-- link to the appropriate impression page -->
+           		<a class="btn-Alt btn-info btn-rounded" href="#">Impressions</a>
+            </div>
+            <div class="ibox-content">
+            
+                <!-- Insert the total Impressions data -->
+              <span id="totalStat"><!-- insert actual stat in place of the placeholder-->400,000</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3-1">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+            	<!-- link the button to the appropriate page -->
+            	<a class="btn-Alt btn-warning btn-rounded" href="#">Clicks</a>
+            </div>
+            <div class="ibox-content">
+                <!-- insert the total clicks data here -->
+                <span id="totalStat"><!-- insert actual stat in place of the placeholder-->300,000</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3-1">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+            	<!-- insert the appropriate link to the Earnings page -->
+                <a class="btn-Alt btn-primary btn-rounded" href="#">Earnings</a>
+            </div>
+            <div class="ibox-content">
+                <!-- insert the total Earning data here -->
+                <span id="totalStat"><!-- insert actual stat in place of the placeholder-->$500,000</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3-1">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+            	<!-- insert the appropriate link to the CPM page -->
+                <a class="btn-Alt btn-success btn-rounded" href="#">CPM</a>
+            </div>
+            <div class="ibox-content">
+                <!-- insert the total CPM data here -->
+                <span id="totalStat"><!-- insert actual stat in place of the placeholder-->$45,000</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3-1">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+            	<!-- insert the appropriate link to the CPC page -->
+                <a class="btn-Alt btn-yellow btn-rounded" href="#">CPC</a>
+            </div>
+            <div class="ibox-content">
+                <!-- insert the total CPC data here -->
+                <span id="totalStat"><!-- insert actual stat in place of the placeholder-->$53,000</span>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- insert the daily stats using the graph-->
+        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Daily Stats</h5>
+                                <div class="pull-right" style="position: relative; top: -3px;">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-xs btn-white active">Today</button>
+                                        <button type="button" class="btn btn-xs btn-white">Monthly</button>
+                                        <button type="button" class="btn btn-xs btn-white">Previous Month</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                               <div class="col-lg-9">
+                                    <div class="flot-chart">
+                                        <div class="flot-chart-content" id="flot-dashboard-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 772px; height: 200px;" width="772" height="200"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 64px; top: 185px; left: 84px; text-align: center;" class="flot-tick-label tickLabel">Jan 04</div><div style="position: absolute; max-width: 64px; top: 185px; left: 155px; text-align: center;" class="flot-tick-label tickLabel">Jan 07</div><div style="position: absolute; max-width: 64px; top: 185px; left: 225px; text-align: center;" class="flot-tick-label tickLabel">Jan 10</div><div style="position: absolute; max-width: 64px; top: 185px; left: 296px; text-align: center;" class="flot-tick-label tickLabel">Jan 13</div><div style="position: absolute; max-width: 64px; top: 185px; left: 367px; text-align: center;" class="flot-tick-label tickLabel">Jan 16</div><div style="position: absolute; max-width: 64px; top: 185px; left: 437px; text-align: center;" class="flot-tick-label tickLabel">Jan 19</div><div style="position: absolute; max-width: 64px; top: 185px; left: 508px; text-align: center;" class="flot-tick-label tickLabel">Jan 22</div><div style="position: absolute; max-width: 64px; top: 185px; left: 578px; text-align: center;" class="flot-tick-label tickLabel">Jan 25</div><div style="position: absolute; max-width: 64px; top: 185px; left: 649px; text-align: center;" class="flot-tick-label tickLabel">Jan 28</div><div style="position: absolute; max-width: 64px; top: 185px; left: 720px; text-align: center;" class="flot-tick-label tickLabel">Jan 31</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 173px; left: 19px; text-align: right;" class="flot-tick-label tickLabel">0</div><div style="position: absolute; top: 132px; left: 6px; text-align: right;" class="flot-tick-label tickLabel">250</div><div style="position: absolute; top: 92px; left: 6px; text-align: right;" class="flot-tick-label tickLabel">500</div><div style="position: absolute; top: 52px; left: 6px; text-align: right;" class="flot-tick-label tickLabel">750</div><div style="position: absolute; top: 12px; left: 0px; text-align: right;" class="flot-tick-label tickLabel">1000</div></div><div class="flot-y-axis flot-y2-axis yAxis y2Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 173px; left: 760px;" class="flot-tick-label tickLabel">0</div><div style="position: absolute; top: 144px; left: 760px;" class="flot-tick-label tickLabel">5</div><div style="position: absolute; top: 115px; left: 760px;" class="flot-tick-label tickLabel">10</div><div style="position: absolute; top: 87px; left: 760px;" class="flot-tick-label tickLabel">15</div><div style="position: absolute; top: 58px; left: 760px;" class="flot-tick-label tickLabel">20</div><div style="position: absolute; top: 29px; left: 760px;" class="flot-tick-label tickLabel">25</div><div style="position: absolute; top: 1px; left: 760px;" class="flot-tick-label tickLabel">30</div></div></div><canvas class="flot-overlay" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 772px; height: 200px;" width="772" height="200"></canvas><div class="legend"><div style="position: absolute; width: 110px; height: 31px; top: 13px; left: 35px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;left:35px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #000000;padding:1px"><div style="width:4px;height:0;border:5px solid #1ab394;overflow:hidden"></div></div></td><td class="legendLabel">Number of orders</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #000000;padding:1px"><div style="width:4px;height:0;border:5px solid #1C84C6;overflow:hidden"></div></div></td><td class="legendLabel">Payments</td></tr></tbody></table></div></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul class="stat-list">
+                                        <li>
+                                            <h2 class="no-margins"><!-- The number is a placeholder for the total number of impressions -->2,346</h2>
+                                            <small>Total Impressions</small>
+                                            <div class="stat-percent"><!-- insert actual percentage -->48% <i class="fa fa-level-up text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 48%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h2 class="no-margins "><!-- the following number is the total amount spent (note: add the currency)-->$4,422</h2>
+                                            <small>Total Spent</small>
+                                            <div class="stat-percent"><!-- insert actual percentage -->60% <i class="fa fa-level-down text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 60%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h2 class="no-margins "><!-- the number is the placeholder of the total amount of clicks the user got -->9,180</h2>
+                                            <small>Total Clicks</small>
+                                            <div class="stat-percent"><!-- insert actual percentage -->22% <i class="fa fa-bolt text-navy"></i></div>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 22%;" class="progress-bar"></div>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+
+<div class="row">
+    <div class="col-lg-12">
+    	<div class="ibox float-e-margins">
+            <div class="ibox-title"><h4>Filters</h4></div>
+            <div class="ibox-content">
+        <div class="form-group">
+        	<table width="100%">
+        		<tr>
+        			<th class="col-sm-5"><label class="control-label">Dates</label></th>
+        			<th class="col-sm-5"><label class="control-label">Sites</label></th>
+        			<th class="col-sm-2">&nbsp;</th>
+        		</tr>
+        		<tr>
+        			<td style="padding-right: 2%;"><div class="form-group" id="data_1">
+                            <div class="input-group date"><span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014"></div>
+                     </div></td>
+        			<td class="btn-group"><button style="padding-right: 40%;" type="button" class="multiselect dropdown-toggle btn btn-white" data-toggle="dropdown" title="None selected" aria-expanded="false">Choose the campaign you wish to view &nbsp;<b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Search"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Campaign"> Option 1 <!-- insert the campaign name for selection --></label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Campaign"> Option 2 <!-- insert the campaign name for selection --></label></a></li></ul></td>
+                <td><p align="center"><button class="btn btn-primary" type="submit">Submit</button></p></td>
+        		</tr>
+        	</table>
+        	</div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+	<label class="col-sm-2 control-label col-md-offset-3">Update Status:</label>
+		<div class="col-sm-4">
+			<select class="form-control m-b" name="account">
+                 <option>Active</option>
+        		<option>Pending</option>
+        		<option>Declined</option>                       
+            </select>
+        </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+            	<table class="table">
+                    <thead>
+                        <tr>
+                            <td width="2%"><p style="font-size: 13px;">Select All</p></td>
+                            <td colspan="5"><h5 id="table_this_month" class="thismonth" style="padding-left: 10%">Campaigns - November, 2017<!-- insert the current month --></td>
+                            <td align="right">
+							<span style="font-weight: bold; padding-right: 2%;"> Filter: </span>
+                           	<button class="btn btn-primary dim" type="button"><i class="fa fa-check"></i></button> <span style="font-weight: bold; padding-right: 3%;"> 10</span> <!-- insert the number of active campaigns -->
+                            <button class="btn btn-warning dim" type="button"><i class="fa fa-clock-o"></i></i></button> <span style="font-weight: bold; padding-right: 3%;">5</span> <!-- insert the number of pending campaigns -->
+                        	<button class="btn btn-danger dim " type="button"><i class="fa fa-times"></i></button> <span style="font-weight: bold; padding-right: 3%;">7</span> <!-- insert the number of inactive campaigns --></td>
+                        </tr>
+                    </thead>
+                </table> 
+
+            </div>
+
+            <div class="ibox-content">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><div class="checkbox checkbox-primary">
+                                <input id="checkbox2" type="checkbox" checked=""><label for="checkbox2"></label>
+                            </div></th>
+                            <th>Status</th>
+                            <th>Campaign Name</th>
+                            <th>Impressions</th>
+                            <th>Clicks</th>
+                            <th>Spend</th>
+                            <th>Preview</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                               <div class="checkbox checkbox-primary">
+                                    <input id="checkbox2" type="checkbox" checked=""><label for="checkbox2"></label>
+                                </div>
+                            </td>
+                            <td><!-- Show status - If status is active, insert the following code for the button: <mark id="ActiveStatus">Active</mark>
+                                If the status shows that the campaign in pending insert the following code: <mark id="PendingStatus">Pending</mark>
+                                If the status shows that the campaign is declined, insert this code: <mark id="DeclinedStatus">Declined</mark> -->
+                                 <mark id="ActiveStatus">Active</mark> <!-- This is the placeholder. Replace the place holder with actual code -->
+                            </td>
+                            <td>Example Campaign <!--placeholder: insert code here --></td>
+                            <td> 464,902 <!-- Replace the placeholder for actual data --></td>
+                            <td>396,802 <!-- Place Holder --></td>
+                            <td> $693,569 <!-- Place Holder --></td>
+                            <td align="center"><button type="button" class="btn btn-white" data-toggle="tooltip" data-placement="left" title="Preview the campaign image or website">
+                            	<i class="fa fa-camera"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            
+
+        </div>
+    </div>
+    <img alt="Trafficroots Analysis Pixel" src="https://publishers.trafficroots.com/pixel/58daaf821381f" style="display: none;">
+</body>
+
+</html>

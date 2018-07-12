@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+/* iCheck plugin Square skin, green
+----------------------------------- */
+.icheckbox_square-green,
+.iradio_square-green {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(green.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-green {
+    background-position: 0 0;
+}
+.icheckbox_square-green.hover {
+    background-position: -24px 0;
+}
+.icheckbox_square-green.checked {
+    background-position: -48px 0;
+}
+.icheckbox_square-green.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+.icheckbox_square-green.checked.disabled {
+    background-position: -96px 0;
+}
+
+.iradio_square-green {
+    background-position: -120px 0;
+}
+.iradio_square-green.hover {
+    background-position: -144px 0;
+}
+.iradio_square-green.checked {
+    background-position: -168px 0;
+}
+.iradio_square-green.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+.iradio_square-green.checked.disabled {
+    background-position: -216px 0;
+}
+
+.white-bg {
+	background-color: #fffff;
+}
+
+
+/*jackie*/
+.title-blue {
+/*	background-color: #3a84c1;*/
+	font-family: 'Didact Gothic', sans-serif;
+/*	color: #ffffff;*/
+	font-weight: bold;
+	font-size: 22px;
+/*	padding: 0 15px;*/
+    padding: 20px 30px 0px;
+	margin: 0;
+	display: inline-block;
+	letter-spacing: .05em;
+}
+
+.ibox-panel-title {
+	display: block;
+    margin: 0 -20px;
+    padding: 0 20px 5px;
+}
+
+/*
+.nav-second-level li a:hover {
+    background-color: #cccccc !important;
+    color: white !important;
+}
+*/
+
+.nav > li.active {
+    border-left: none !important;
+/*    background: #293846;*/
+/*	color: white;*/
+}
+.nav > li.active > a {
+    color: #ffffff;
+    background-color: #3a84c1 !important;
+}
+
+nav .nav li.active .nav-second-level li a {
+	background-color: #293846 !important;
+}
+
+.nav > li.active > a > li.active {
+	background-color: none;
+}
+
+.nav-tabs > li.active > a {
+    color: #666;
+    background-color: white !important;
+    font-weight: bold;
+}
+
+.p-t {padding-top: 10px;}
+.p-t-half {padding-top: 5px;}
+.p-title {padding: 15px 15px 5px 15px;}
+.side-nav li.active { background: none !important;}
+.stat.label { font-size: 1em; padding: 10px 15px;border-radius: 20px;}
+.ibox-title { overflow: hidden; }
+.totalStat { font-size: 1.5em !important;}
+.label-yellow { background-color: #cccc33 !important; color: #ffffff !important;}
+.tree-bg { background-image: url('../img/OakTree.png'); background-position: left; background-repeat:  no-repeat; background-size: contain;}
+.or-line { border-bottom: 2px solid #1ab394; display: block; width: auto; position: relative; height: 2px;}
+.or { padding: 5px; background-color: #f5f5f5; margin-top: -15px; position: absolute; text-align: center; width: 100px; margin-left: -50px;}
+.dropzone-previews { border: 1px dashed #ddd; display: inline-block; padding: 15px;}
+.drop { border: 1px dashed #ddd; display: inline-block; padding: 30px;}
+.btn-light { background-color: #dddddd;}
+
+.widget-boxs .ibox.float-e-margins { text-align: center;}
+
+.widget-boxs .ibox.float-e-margins .ibox-title {
+	padding: 15px 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.widget-boxs .ibox span.fa {
+	font-size: 20px;
+	padding-right: 5px;
+}
+
+#side-menu span.fa.arrow {
+ -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.centered-block {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+button.loginBtn {
+	max-width: 130px;
+	text-align: center;
+    display: inline-block;
+}
+
+#registerform #selectRole .btn {
+	padding-bottom: 0px;
+}
+
+#StayConnected div {
+	margin-bottom: 15px;
+	padding-right: 0px;
+}
+
+.tabs-container .tab-pane .no-border .panel-body {
+	border: 0px;
+}
+
+.tab-container .tab-content h2 {
+	margin-top: 0;
+	margin-left: 0px;
+}
+
+.dailystats {
+	margin-top: 30px;
+	padding: 0px 15px;
+}
+
+.tabs-container .tab-pane .no-border .panel-body {
+	padding: 0px;
+}
+
+.tabs-container .tab-pane .no-border .panel-body {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.tabs-container li span {
+    font-size: 20px;
+}
+
+
+/*data filtering */
+.dataTables_length {
+    padding-left: 5px;
+}
+
+.html5buttons {
+	float: right;
+}
+
+.html5buttons a.btn.btn-default {
+    color: white;
+    background-color: slategrey;
+}
+
+.html5buttons a.btn.btn-default:hover {
+ 	background-color:rgba(0,0,0,0.6);
+}
+
+.dataTables_length label select {
+    padding-top: 2px;
+}
+
+.dataTables_length label {
+	font-weight: 600;
+	margin-right: 30px;
+}
+
+.dataTables_filter label {
+	font-weight: 600 !important;
+}
+
+.dataTables_info {
+	margin: 10px 0px 15px 5px;
+    font-weight: 600 !important;
+}
+
+.dataTables_filter input.form-control.input-sm, .dataTables_length label select,
+div.dataTables_wrapper div.dataTables_filter input {
+	background-color: white;
+    border: 1px solid lightgrey;
+    margin-left: 10px;
+    padding: 3px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.tablesaw-stack td .tablesaw-cell-label, .tablesaw-stack th .tablesaw-cell-label {
+	padding: 0 80px 0 0;
+}
+
+table {
+    width: 100% !important;
+}
+
+.dataTables_paginate {
+	text-align: center;
+}
+
+.legendColorBox {
+	width: 10px;
+}
+
+#form-targeting label {
+	margin: 15px 0px 5px;
+}
+
+.chosen-container-multi .chosen-choices {
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    padding: 3px 5px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	border-radius: 5px;
+}
+
+.dateRangeIcon {
+	position: absolute;
+    bottom: 10px;
+    right: 24px;
+    top: auto;
+    cursor: pointer;
+}
+
+.media-selection div label {
+	font-weight: normal;
+}
+
+.image-preview {
+	border: 1px solid #e7eaec;
+    width: 100%;
+    max-width: 700px;
+    padding: 5px 25px;
+    display: block;
+    margin: auto;
+	min-height: 100px;
+}
+
+.image-preview img {
+	max-width: 100%;
+/*    max-height: 100%;*/
+	max-height: 250px;
+}
+
+/*table filtered daterange hide random calendar from showing on filter*/
+#ui-datepicker-div {
+	display: none;
+}
+
+.flot-chart .legend > div {
+	background-color: transparent !important;
+}
+
+/*modals*/
+.swal-footer, .modal-footer {
+	text-align: center;
+}
+
+/*input selector*/
+.chosen-container-single .chosen-single {
+	background: none;
+	border-color: #e5e6e7;
+	box-shadow: none;
+}
+
+.tab-content .panel .btnNewEntry {
+	margin-bottom: 15px;
+}
+
+.tab-content.tab-padding .panel > div {
+	padding-top: 20px;
+}
+
+button span.btn-label {
+    padding: 2px 8px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 3px 0 0 3px;
+    position: relative;
+    left: -7px;
+}
+
+.inmodal .modal-body {
+	background-color: #fff;
+}
+
+#reportrange .fa-calendar {
+    float: right;
+    padding-top: 3px;
+}
+
+/*navbar*/
+.nav-tabs {
+	border-bottom: 0px;
+}
+
+.panel.panel-body {
+    border: 0px;
+    border-top: 0px;
+    margin-top: -1px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border: 1px solid #e7eaec;
+	border-bottom-color: transparent;
+}
+
+div.tab-pane {
+	border: 0px;
+}
+
+b.tablesaw-cell-label {
+    float: left;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_square-green,
+    .iradio_square-green {
+        background-image: url(green@2x.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+
+/* -- Login Page -- */
+
+#page-wrapper .wrapper .login-container {
+    width: 100%;
+    height: 100%;
+    z-index: 20002;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+/* -- Google and facebook login -- */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+table span.bid-type {
+    width: 60px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+
+
+/* Buttons on Sites / Campaign Pg */
+.tablesaw .text-center .btn {
+  margin: 3px;
+}
+
+.tablesaw .text-center div {
+	display: inline-block;
+	padding-right: 5px;
+	word-break: break-all;
+}
+
+#site_form .modal-body .btn-success {
+  margin: 10px 4px 15px;
+}
+
+#allowed_category___chosen ul li input {
+	width: 200px !important;
+}
+
+/* Buttons on Campaign pg */
+ .btn-success {
+  padding-right: 11px;
+}
+ .tablesaw .text-center .btn-success span.btn-label {
+  padding-right: 10px;
+}
+
+.btn-hide > button, .btn-hide > button:hover {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none; 
+	color: #f3f3f4;
+	cursor: default;
+	overflow: hidden;
+}

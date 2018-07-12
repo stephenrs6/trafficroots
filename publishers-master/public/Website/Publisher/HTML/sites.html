@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_globalsign-domain-verification" content="qbw9lV17xS49YNux6uCCiE45peUkwMOWEjK5xjrONE" />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="WyBnsSlWYHdIvc7p7weHh81fc8HYZuwUrRgRVUPw">
+
+    <title>TrafficRoots - Sites</title>
+
+    <!-- Scripts -->
+    <script>
+    window.Laravel = {
+        'csrfToken': "WyBnsSlWYHdIvc7p7weHh81fc8HYZuwUrRgRVUPw",
+    }
+    </script>
+    <!-- Global and page level js -->
+    <!-- Data Tables -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/af-2.2.0/b-1.3.1/b-colvis-1.3.1/b-html5-1.3.1/b-print-1.3.1/cr-1.3.3/fc-3.2.2/fh-3.1.2/kt-2.2.1/r-2.1.1/sc-1.4.2/se-1.2.2/datatables.min.css"/>
+<!-- global styles -->
+<!-- Replace ../../ with the actual direct path to the css page -->
+<link rel="stylesheet" href="../../css/bootstrap.css" >
+<link rel="stylesheet" href="../../css/font-awesome.css" >
+<link rel="stylesheet" href="../../css/plugins/toastr/toastr.min.css" >
+<link rel="stylesheet" href="https://trafficroots.com/js/plugins/gritter/jquery.gritter.css" >
+<link rel="stylesheet" href="../../css/animate.css" >
+<link rel="stylesheet" href="../../css/style.css" >
+<link rel="stylesheet" href="https://trafficroots.com/mix/app.css?id=5aad3a4b2ca245489c5a" >
+<!-- summer editor -->
+
+
+<!-- date pickers -->
+
+<!-- jquery steps -->
+<link rel="stylesheet" href="https://trafficroots.com/css/plugins/steps/jquery.steps.css">
+
+
+<!-- tips styles -->
+<style>
+    .logo-style{
+    width: 70px; height: 70px; border-radius: 50%; background-color: #19aa8d; display:table-cell; vertical-align:middle; text-align:center;
+    }
+.panel-default > .panel-heading {
+  background: #1AB394;
+  color: white;
+}
+</style>
+<!-- end globals -->
+<!-- page level styles -->
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<link href="https://trafficroots.com/css/plugins/footable/footable.core.css"
+      rel="stylesheet">
+<link href="https://trafficroots.com/css/plugins/iCheck/custom.css" rel="stylesheet">
+<style type="text/css">
+.footable th:last-child .footable-sort-indicator {
+    display: none;
+}
+</style>
+<!-- end page level styles -->
+ 
+    <script src="https://trafficroots.com/mix/app.js?id=c76612347a885fea75d7"></script>
+<!-- Mainly scripts -->
+
+<script src="https://trafficroots.com/js/bootstrap.min.js"></script>
+<script src="https://trafficroots.com/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="https://trafficroots.com/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Data Tables -->
+
+<!-- Flot -->
+<script src="https://trafficroots.com/js/plugins/flot/jquery.flot.js"></script>
+<script src="https://trafficroots.com/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+
+
+<!-- Peity -->
+
+
+<!-- Custom and plugin javascript -->
+<script src="https://trafficroots.com/js/inspinia.js"></script>
+<script src="https://trafficroots.com/js/plugins/iCheck/icheck.min.js"></script>
+
+
+<!-- jQuery UI -->
+
+
+<!-- GITTER -->
+
+
+<!-- Sparkline -->
+
+
+<!-- Sparkline demo data  -->
+
+
+<!-- ChartJS-->
+<script src="https://trafficroots.com/js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- jQuerySteps -->
+<script src="https://trafficroots.com/js/plugins/staps/jquery.steps.min.js"></script>
+
+<!-- Google reCaptcha -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Toastr -->
+<script src="https://trafficroots.com/js/plugins/toastr/toastr.min.js"></script>
+
+<script type="text/javascript">
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    // "progressBar": true,
+    "preventDuplicates": true,
+    "positionClass": "toast-top-right",
+    "onclick": null,
+    "showDuration": "400",
+    "hideDuration": "400",
+    "timeOut": "2000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "slideDown",
+    "hideMethod": "slideUp"
+};
+
+function setActiveNav(selector) {
+    $('.nav-click').removeClass("active");
+    $(selector).addClass("active");
+}
+</script>
+<!-- Input Mask -->
+
+<!-- SUMMERNOTE -->
+
+
+<!-- Input Mask-->
+
+
+<!-- Data picker -->
+
+
+<!-- Clock picker -->
+
+
+<!-- Date range use moment.js same as full calendar plugin -->
+
+
+<!-- Date range picker -->
+
+
+<!-- end globals -->
+<!-- page level scripts -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://trafficroots.com/js/plugins/footable/footable.all.min.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+<script src="https://trafficroots.com/js/plugins/iCheck/icheck.min.js"></script>
+<!-- end page level scripts -->
+</head>
+
+<body class="no-skin-config">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                             <!-- Branding Image -->
+                            <!-- Changed the Logo and need to be inserted into the new template -->
+                            <!-- changes have been made to the Logo of the site -->
+                            <div>
+                                <a href="https://trafficroots.com">
+                                    <div id="NewLogo"> <img src="../img/Logo.png" width="302px" height="189px"></div>
+                                </a>
+                            </div>
+                    </li>
+                    <!-- Authentication Links -->
+                                        <li id="nav_pub" class="nav-click">
+                        <a href="https://trafficroots.com/home">
+                            <i class="fa fa-desktop fa-2x"></i>
+                            <span class="nav-label">Publisher</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="https://trafficroots.com/home?type=1">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/sites">Sites</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/stats/pub">Stats</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="nav_buyer" class="nav-click">
+                        <a href="https://trafficroots.com/buyers">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <span class="nav-label">Advertiser</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="https://trafficroots.com/buyers">Admin</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/home?type=2">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/campaigns">Campaigns</a>
+                            </li>
+                            <li>
+                                <a href="https://trafficroots.com/faq_advertiser">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="nav_support" class="nav-click">
+                        <a href="https://trafficroots.com/tickets">
+                            <i class="fa fa-bug fa-2x"></i>
+                            <span class="nav-label">Support</span>
+                        </a>
+                    </li>
+                    
+                    <li id="nav_logout" class="nav-click">
+                        <a href="https://trafficroots.com/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                            <i class="fa fa-plug fa-2x"></i>
+                            <span class="nav-label">Logout</span>
+                        </a>
+                        <form id="logout-form" action="https://trafficroots.com/logout" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="WyBnsSlWYHdIvc7p7weHh81fc8HYZuwUrRgRVUPw">
+                        </form>
+                    </li>
+                                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                                                <li>
+                            <span class="m-r-sm text-muted welcome-message">Janice_Demo</span>
+                        </li>
+
+                        <li>
+                            <a href="https://trafficroots.com/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                <i class="fa fa-plug"></i>
+                                <span class="nav-label">Logout</span>
+                            </a>
+                            <form id="logout-form" action="https://trafficroots.com/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="WyBnsSlWYHdIvc7p7weHh81fc8HYZuwUrRgRVUPw">
+                            </form>
+                        </li>
+                        
+                                            </ul>
+
+                </nav>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                 <!-- Inserted the Header into the template -->                 
+                <h1><mark id="PubHeader">Publishers Sites/Zones</mark></h1>
+                <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1">Sites</a></li>
+                            <li class=""><a data-toggle="tab" href="#tab-2">Add a Site</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active">
+                                <div class="panel-body">
+                                    <!-- 1st Panel -->
+                                    <div class="col-lg-12">
+        <div class="ibox">
+                <div style="overflow-wrap: break-word;">
+                    <!-- Search Table -->
+                    <table>
+                        <tr>
+                            <td width="33%"><input type="text" class="form-control input-sm m-b-xs" id="filter" placeholder="Search in table"></td>
+                            <td style="padding-left: 3%; padding-bottom: 1%;"><button type="submit" class="btn btn-w-m btn-primary">Search</button></td>
+                        </tr>
+                    </table>
+                    <!-- end of Search table --> 
+                    <table class="footable table table-stripped no-paging footable-loaded" data-page-size="8" data-filter="#filter">
+                        <thead>
+                            <tr>
+                                </tr><tr>
+                                    <th class="footable-sortable">Site Name<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Site Url<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Site Category<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Links<span class="footable-sort-indicator"></span></th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                                        <tr style="" class="footable-even">
+                                <td><span class="footable-toggle"></span>McIntire and McIntire<!-- insert the name of the site --></td>
+                                <td>http://www.mcintireandmcintire.com<!-- insert the website link --></td>
+                                <td>Business <!-- insert the website type --></td>
+                                <td data-site_id="135">
+                                    <a href="#" class="site-zones">
+                                        <span class="label label-success">Zones</span>
+                                    </a>
+                                    <a href="https://trafficroots.com/stats/site/135" class="site-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="site-edit" data-toggle="modal" data-target="#editSite135">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="site-pixel" data-toggle="modal" data-target="#sitePixel135">
+                                        <span class="label label-success">Pixel</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                    </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"><li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li><li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li><li class="footable-page active"><a data-page="0" href="#">1</a></li><li class="footable-page-arrow disabled"><a data-page="next" href="#next">›</a></li><li class="footable-page-arrow disabled"><a data-page="last" href="#last">»</a></li></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="tab-2" class="tab-pane">
+    <div class="panel-body">
+        <!-- Second Panel -->
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                        <div class="row">
+                            <!-- Left Box -->
+                            <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Basic Information</h3>
+                                <form role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Name</label>
+                                    <div class="col-sm-10" style="padding-bottom: 3%;"><input placeholder="Name" class="form-control" type="text"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">URL</label>
+                                    <div class="col-sm-10" style="padding-bottom: 3%;"><input placeholder="URL" class="form-control" type="text"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Type</label>
+                                    <div class="col-sm-10" style="padding-bottom: 1%;">
+                                        <select class="form-control m-b" name="account">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                        </select>
+                                    </div>    
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Category</label>
+                                    <div class="col-sm-10" style="padding-bottom: -3%;" >
+                                        <select class="form-control m-b" name="account">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                        </select>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12 col-md-offset-3" id="Zones">
+                                    <fieldset>
+                                        <div class="checkbox checkbox-primary" style="padding-bottom: 1%;">
+                                            <input id="checkbox2" checked="" type="checkbox">
+                                            <label for="checkbox2">Automatically Create a Standered Zone for Me</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Description</label>
+                                    <div class="col-sm-10" style="padding-bottom: 3%;"><input placeholder="Description" class="form-control" type="text"></div>
+                                </div>
+                                
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Right Box -->
+                        <h3 align="left">Stay Connected</h3>
+                            <div class="form-group"><label class="col-sm-2 control-label"><i class="fa fa-linkedin-square"></i></label>
+                                <div class="col-sm-10" style="padding-bottom: 3%;"><input type="text" placeholder="LinkedIn Account" class="form-control"></div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label"><i class="fa fa-facebook-square"></i></label>
+                                <div class="col-sm-10" style="padding-bottom: 3%;"><input type="text" placeholder="Facebook Account" class="form-control"></div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label"><i class="fa fa-instagram"></i></label>
+                                <div class="col-sm-10" style="padding-bottom: 3%;"><input type="text" placeholder="Instragram Account" class="form-control"></div>
+                            </div>
+                            <div class="form-group"><label class="col-sm-2 control-label"><i class="fa fa-twitter-square"></i></label>
+                                <div class="col-sm-10" style="padding-bottom: 3%;"><input type="text" placeholder="Twitter Account" class="form-control"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Create Zones Table  -->
+            <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Customized zones</h5>
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#addZone135">Add Zone</button>
+                        
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <input type="text" class="form-control input-sm m-b-xs" id="filter" placeholder="Search in table">
+
+                    <table class="footable table table-stripped footable-loaded" id="zonesTable" data-page-size="8" data-filter="#filter">
+                        <thead>
+                            <tr>
+                                </tr><tr>
+                                    <th class="footable-sortable">Zone Name<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Location Type<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Size<span class="footable-sort-indicator"></span></th>
+                                    <th class="footable-sortable">Links<span class="footable-sort-indicator"></span></th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                                        <tr class="footable-even" style="">
+                                <td><span class="footable-toggle"></span>Leaderboard </td>
+                                <td>Leaderboard </td>
+                                <td>728x90 </td>
+                                <td data-zone_id="237">
+                                    <a href="/stats/zone/237" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone237">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode237">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-odd" style="">
+                                <td><span class="footable-toggle"></span>Super Leaderboard </td>
+                                <td>Super Leaderboard </td>
+                                <td>970x90 </td>
+                                <td data-zone_id="238">
+                                    <a href="/stats/zone/238" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone238">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode238">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-even" style="">
+                                <td><span class="footable-toggle"></span>Cube A </td>
+                                <td>Medium Rectangle </td>
+                                <td>300x250 </td>
+                                <td data-zone_id="239">
+                                    <a href="/stats/zone/239" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone239">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode239">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-odd" style="">
+                                <td><span class="footable-toggle"></span>Cube B </td>
+                                <td>Medium Rectangle </td>
+                                <td>300x250 </td>
+                                <td data-zone_id="240">
+                                    <a href="/stats/zone/240" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone240">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode240">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-even" style="">
+                                <td><span class="footable-toggle"></span>Cube C </td>
+                                <td>Medium Rectangle </td>
+                                <td>300x250 </td>
+                                <td data-zone_id="241">
+                                    <a href="/stats/zone/241" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone241">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode241">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-odd" style="">
+                                <td><span class="footable-toggle"></span>Mobile Banner </td>
+                                <td>SmartPhone Static Wide Banner </td>
+                                <td>320x50 </td>
+                                <td data-zone_id="242">
+                                    <a href="/stats/zone/242" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone242">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode242">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-even" style="">
+                                <td><span class="footable-toggle"></span>Mobile Footer </td>
+                                <td>SmartPhone Static Wide Banner </td>
+                                <td>320x50 </td>
+                                <td data-zone_id="243">
+                                    <a href="/stats/zone/243" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone243">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode243">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-odd" style="">
+                                <td><span class="footable-toggle"></span>Footer </td>
+                                <td>Leaderboard </td>
+                                <td>728x90 </td>
+                                <td data-zone_id="244">
+                                    <a href="/stats/zone/244" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone244">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode244">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                        <tr class="footable-even" style="display: none;">
+                                <td><span class="footable-toggle"></span>Large Footer </td>
+                                <td>Super Leaderboard </td>
+                                <td>970x90 </td>
+                                <td data-zone_id="245">
+                                    <a href="/stats/zone/245" class="zone-stats">
+                                        <span class="label label-info">Stats</span>
+                                    </a>
+                                    <a href="#" class="zone-edit" data-toggle="modal" data-target="#editZone245">
+                                        <span class="label">Edit</span>
+                                    </a>
+                                    <a href="#" class="zone-code" data-toggle="modal" data-target="#zoneCode245">
+                                        <span class="label label-success">Code</span>
+                                    </a>
+                                </td>
+                            </tr>
+                                                    </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <ul class="pagination pull-right"><li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li><li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li><li class="footable-page active"><a data-page="0" href="#">1</a></li><li class="footable-page"><a data-page="1" href="#">2</a></li><li class="footable-page-arrow"><a data-page="next" href="#next">›</a></li><li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li></ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+            
+            <!-- End of zones table -->
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <img alt="Trafficroots Analysis Pixel" src="https://publishers.trafficroots.com/pixel/58daaf821381f" style="display: none;">
+</body>
+
+</html>

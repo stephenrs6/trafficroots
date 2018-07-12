@@ -1,0 +1,88 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="ibox">
+    <div class="ibox-title">Site Analysis:  <div class="pull-right"><strong> {{ $site->site_name }} </strong>- <a href="{{ $site->site_url }}" target="_blank">{{ $site->site_url }}</a></div></div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="ibox">
+                <div class="ibox-title">Countries</div>
+
+                <div class="ibox-content">
+                {!! $geo_table !!}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="ibox">
+                <div class="ibox-title">US States</div>
+
+                <div class="ibox-content">
+                {!! $state_table !!}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="ibox">
+                <div class="ibox-title">US Cities</div>
+
+                <div class="ibox-content">
+                {!! $city_table !!}
+                </div>
+            </div>
+        </div>
+
+
+       </div>
+       <div class="row">
+        <div class="col-md-4">
+            <div class="ibox">
+                <div class="ibox-title">Devices</div>
+
+                <div class="ibox-content">
+                {!! $device_table !!}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="ibox">
+                <div class="ibox-title">Operating Systems</div>
+
+                <div class="ibox-content">
+                {!! $os_table !!}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="ibox">
+                <div class="ibox-title">Browsers</div>
+
+                <div class="ibox-content">
+                {!! $browser_table !!}
+                </div>
+            </div>
+        </div>
+         </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.noConflict();
+        $('.data-table1').DataTable({
+            "order": [[ 1, "desc" ]],
+            "dom": 'lfrtip',
+            "responsive": true,
+            "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, "All"] ]
+        });    
+        $('.data-table2').DataTable({
+            "order": [[ 2, "desc" ]],
+            "dom": 'lfrtip',
+            "responsive": true,
+            "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, "All"] ]
+        });
+    });
+
+</script>
+@endsection
