@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<!-- first commit test -->
 @section('title','Library')
 @section('css')
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
@@ -255,22 +255,22 @@
             </div>
             <form name="edit_link_form"
                   id="edit_link_form"
-				  role="form" 
-				  method="POST" 
+				  role="form"
+				  method="POST"
 				  action="{{ url('/edit_link/') }}"> {{ method_field('PATCH') }}
                     <div class="modal-body">
-                        {{ csrf_field() }} 
+                        {{ csrf_field() }}
 						<input type="hidden"
 							   value = "{{ $link->id }}"
                                class="form-control"
-                               name="link_id"> 
+                               name="link_id">
                     <div class="form-group">
                         <label>Name</label>
                         <input type="text"
                                placeholder="Link name"
 							   value = "{{ $link->link_name }}"
                                class="form-control"
-                               name="link_name" 
+                               name="link_name"
                                required>
 
                         <label class="error hide"
@@ -299,7 +299,7 @@
                                class="form-control"
                                name="url"
                                required>
-                        <input type="hidden" 
+                        <input type="hidden"
                                name="return_url"
                                id="return_url"
             @if( $_SERVER['REQUEST_URI'] == '/campaign')
@@ -309,7 +309,7 @@
                     @endif
                         <label class="error hide"
                                for="url"></label>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button"
@@ -345,15 +345,15 @@ jQuery(document).ready(function ($) {
 $("a.tr-preview").click(function(event){
     event.preventDefault();
 });
-	
+
 @if(session()->has('media_updated'))
 toastr.success("{{ Session::get('media_updated') }}");
-@endif	
-	
+@endif
+
 @if(session()->has('link_updated'))
 	toastr.success("{{ Session::get('link_updated') }}");
 @endif
-	
+
 function setStatus() {
 	var currentStatus = Array.from($(".currentStatus"));
 	currentStatus.forEach(function(element) {
@@ -368,6 +368,6 @@ function setStatus() {
 		};
 	});
 };
-	
+
 </script>
 @endsection
