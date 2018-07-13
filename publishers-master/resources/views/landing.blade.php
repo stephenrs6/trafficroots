@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Traffic Roots</h1>
-                   
+
                     <p>Ad Network for Modern Lifestyles</p>
                     <p><a class="btn btn-xxxlg btn-primary" href="login" role="button">REGISTER NOW</a></p>
                 </div>
@@ -95,7 +95,7 @@
     <div class="row features-block">
         <div class="col-lg-6 features-text text-center wow fadeInLeft">
             <h2>Perfectly designed </h2>
-            <p>Gain instant and exclusive access to the largest cannabis and vape-friendly websites from one single platform. Whether you’re looking to publish on the industry heavy-hitters, uniquely niche, both, or anything in between, we have the backstage pass to advertise on your favorite sites.</p>            
+            <p>Gain instant and exclusive access to the largest cannabis and vape-friendly websites from one single platform. Whether you’re looking to publish on the industry heavy-hitters, uniquely niche, both, or anything in between, we have the backstage pass to advertise on your favorite sites.</p>
             <a href="" class="btn btn-primary">Learn more</a>
         </div>
         <div class="col-lg-6 text-right wow text-center fadeInRight">
@@ -180,12 +180,12 @@
                                                     <div class="form-group"><label>First Name</label> <input type="text" name="first_name" id="first_name" placeholder="First name" class="form-control" required></div>
                                                     <div class="form-group"><label>Last Name</label> <input type="text" name="last_name" id="last_name" placeholder="Last name" class="form-control" required></div>
                                                     <div class="form-group"><label>Email</label> <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required></div>
-                                                    <div class="form-group"><label>About Me:</label> 
+                                                    <div class="form-group"><label>About Me:</label>
                                                         <select name="list_id" id="list_id" class="form-control listid" required>
                                                         <option value="">Choose One</option>
                                                         <option value="1">I'm a Publisher</option>
                                                         <option value="2">I'm an Advertiser</option>
-                                                        </select>                                         
+                                                        </select>
                                                     </div>
                                         </div>
                                         <div class="modal-footer" id="pop_footer">
@@ -210,7 +210,7 @@
                                         {{ csrf_field() }}
                                         <div id="pub_body" class="modal-body">
                                             <p>Sign up for our newsletter and find out about all the opportunities to monetize your traffic and maximize your earnings with the Traffic Roots Ad Network</p>
- 
+
                                                     <div class="form-group"><label>First Name</label> <input type="text" name="first_name" id="first_name" placeholder="First name" class="form-control" required></div>
                                                     <div class="form-group"><label>Last Name</label> <input type="text" name="last_name" id="last_name" placeholder="Last name" class="form-control" required></div>
                                                     <div class="form-group"><label>Email</label> <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required></div>
@@ -241,7 +241,7 @@
                                                     <div class="form-group"><label>First Name</label> <input type="text" name="first_name" id="first_name" placeholder="First name" class="form-control" required></div>
                                                     <div class="form-group"><label>Last Name</label> <input type="text" name="last_name" id="last_name" placeholder="Last name" class="form-control" required></div>
                                                     <div class="form-group"><label>Email</label> <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required></div>
-                                        
+
                                         </div>
                                         <input type="hidden" name="list_id" id="list_id" value="2">
                                         <div class="modal-footer" id="buyer_footer">
@@ -278,7 +278,7 @@
     </div>
 
 
-</section>	
+</section>
 <section id="contact" class="gray-section contact">
     <div class="container">
         <div class="row m-b-lg">
@@ -292,7 +292,7 @@
                 <address>
                     <strong><span class="navy">Traffic Roots, LLC.</span></strong><br/>
 
-                    San Diego, CA 92121<br/>  
+                    San Diego, CA 92121<br/>
 
                 </address>
             </div>
@@ -328,11 +328,11 @@
 
    <script type="text/javascript">
        jQuery(document).ready(function ($) {
-        setTimeout(function(){ 
+        setTimeout(function(){
             var reg = readCookie('subscribed');
             if(reg == null){
                 $('#popModal').modal('show');
-            } 
+            }
         }, 10000);
         $('#buyer_form').submit(function(){
             var formdata = $('#buyer_form').serialize();
@@ -347,7 +347,7 @@
                                     createCookie('subscribed','true');
                                     setTimeout(function(){ $('#buyerModal').modal('hide'); }, 2000);
                                 });
-                            
+
                         });
                     }else{
                       alert(data);
@@ -382,7 +382,7 @@
             var url = "";
             if(list == 1) url = "/pub_subscribe";
             if(list == 2) url = "/buyer_subscribe";
-            if(url == "") return false; 
+            if(url == "") return false;
             $.post(url, formdata)
                 .done(function( data ) {
                     var response = JSON.parse(data);
@@ -401,7 +401,7 @@
                     }
                 });
             return false;
-        });        
+        });
         $('body').scrollspy({
             target: '.navbar-fixed-top',
             offset: 80
@@ -456,7 +456,7 @@
                 date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
                 var expires = "; expires=" + date.toGMTString();
             }
-            else var expires = "";               
+            else var expires = "";
 
             document.cookie = name + "=" + value + expires + "; path=/";
         }
@@ -474,7 +474,7 @@
 
         function eraseCookie(name) {
             createCookie(name, "", -1);
-        }       
+        }
    </script>
-   
+
 @endsection
